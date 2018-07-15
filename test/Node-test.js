@@ -1,5 +1,5 @@
 const { assert } = require('chai');
-const Node = require('./lib/Node.js');
+const Node = require('../lib/Node.js');
 
 
 describe('Node', function() {
