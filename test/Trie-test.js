@@ -2,6 +2,11 @@ const { assert } = require('chai');
 const Trie = require('../lib/Trie.js');
 const Node = require('../lib/Node.js');
 
+// import fs from 'fs';
+
+// const text = "/usr/share/dict/words";
+// const dictionary = fs.readFileSync(text).toString().trim().split('\n');
+
 describe('Trie', function() {
 
   it('should have its root establish a new Node', function () {
@@ -41,6 +46,15 @@ describe('Trie', function() {
     newTrie.suggest('z');
     assert.deepEqual(newTrie.possibleWords, ['zebra', 'zoo'])
   });
+
+  // it('should be able to suggest from the dictionary', function(){
+  //   let newTrie = new Trie();
+  //   newTrie.populate(dictionary);
+  //   newTrie.suggest('except');
+  //   assert.deepEqual(newTrie.possibleWords, 
+  //     ['cat'
+  //     ])
+  // })
 
 });
 
