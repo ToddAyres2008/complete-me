@@ -42,9 +42,10 @@ describe('Trie', function() {
   it('should return suggestions', function() {
     let newTrie = new Trie();
     newTrie.insert('zebra');
-    newTrie.insert('zoo')
-    newTrie.suggest('z');
-    assert.deepEqual(newTrie.possibleWords, ['zebra', 'zoo'])
+    newTrie.insert('zoo');
+    newTrie.insert('zoinks');
+    newTrie.suggest('zo');
+    assert.deepEqual(newTrie.possibleWords, ['zoo', 'zoinks'])
   });
 
   // it('should be able to suggest from the dictionary', function(){
