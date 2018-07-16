@@ -37,9 +37,10 @@ describe('Trie', function() {
   it('should return suggestions', function() {
     let newTrie = new Trie();
     newTrie.insert('zebra');
+    newTrie.insert('zoo')
     newTrie.suggest('z');
-    assert.deepEqual(newTrie.possibleWords, ['zebra'])
-  })
+    assert.deepEqual(newTrie.possibleWords, ['zebra', 'zoo'])
+  });
 
 });
 
