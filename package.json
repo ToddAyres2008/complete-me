@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
+  "name": "@toddayres2008/boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Complete me npm package",
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -12,7 +12,7 @@
     "start": "webpack --watch",
     "eslint": "./node_modules/eslint/bin/eslint.js ./lib/*.js"
   },
-  "author": "",
+  "author": "Todd Ayres",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.1.2",
@@ -31,5 +31,16 @@
     "style-loader": "^0.21.0",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ToddAyres2008/complete-me.git"
+  },
+  "keywords": [
+    "search"
+  ],
+  "bugs": {
+    "url": "https://github.com/ToddAyres2008/complete-me/issues"
+  },
+  "homepage": "https://github.com/ToddAyres2008/complete-me#readme"
 }

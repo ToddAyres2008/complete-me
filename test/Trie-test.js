@@ -48,15 +48,6 @@ describe('Trie', function() {
     assert.deepEqual(newTrie.possibleWords, ['zoo', 'zoinks'])
   });
 
-  // it('should be able to suggest from the dictionary', function(){
-  //   let newTrie = new Trie();
-  //   newTrie.populate(dictionary);
-  //   newTrie.suggest('except');
-  //   assert.deepEqual(newTrie.possibleWords, 
-  //     ['cat'
-  //     ])
-  // })
-
 });
 
 
